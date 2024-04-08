@@ -13,6 +13,5 @@ export default defineConfig({
       prefixDefaultLocale: false,
     }
   },
-  site: 'http://Colnup.github.io',
-  base: 'portfolio-sae',
+  site: 'http://colnup.github.io'
 });
