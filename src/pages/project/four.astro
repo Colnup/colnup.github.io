@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+import HeaderSmall from "../../components/HeaderSmall.astro"
+
+import Table from "../../components/Table.astro"
+import { Image } from "astro:assets"
+const title = "IUTime"
+const subtitle = "Bot d'emploi du temps"
+---
+
+<Layout title={title}>
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        Projet co-réalisé avec des collègues de l'IUT. Ce Bot discord d'emploi
+        du temps permet de récupérer les emplois du temps de l'IUT de Calais et
+        de les afficher en message privé sur Discord. Il est également possible
+        de stocker des devoirs et d'être notifié lors de l'approche de la date
+        butoir.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style></style>

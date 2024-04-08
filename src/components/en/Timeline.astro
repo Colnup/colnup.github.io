@@ -1,0 +1,42 @@
+---
+import Heading from "../Heading.astro"
+
+const heading = "My Journey"
+const dates = ["August 2023", "September 2022", "Summer 2022", "2015"]
+const info = [
+  "Start of my apprenticeship at K4-U",
+  "Start of my Computer Science studies at the IUT de Calais",
+  "High School Diploma",
+  "Date of my first self-learning experience",
+]
+const details = [
+  "The start of my apprenticeship at K4-U marks the beginning of my professional career. I chose K4-U for its corporate culture, expertise, but above all for its teamwork and kindness. I am very happy to be able to work with quality professionals and to learn new skills. I am also very pleased to be able to work on concrete projects and to put into practice the knowledge I acquired at the IUT - or even learn new technologies. The world of ERP is new to me, and I am delighted to discover it with K4-U.",
+  `This date marks the beginning of my studies in Computer Science with a focus on Application Development (track A) at the IUT de Calais. I chose this program because I wanted to maintain a balance between theory and practice. I also wanted to enter the professional world through apprenticeship. At the IUT, I am learning many technologies and enhancing my general computer skills. I am also working on subjects such as project management, communication, economics, and law, all of which provide me with new perspectives on the world of software development.`,
+  "I obtained my high school diploma with honors. I pursued education in advanced mathematics and digital sciences. I also underwent intensive English training (EURO mention) focusing on Engineering Sciences.",
+  "Date of my very first self-learning experience. I took a course on the basics of programming in Python on OpenClassrooms. In this course, I learned the fundamentals of programming and Python syntax. Since then, I have been immersed in the field of computer science, never getting tired, as it is a constantly evolving world where we learn something new every day.",
+]
+---
+
+<Heading heading={heading} />
+<div class="mb-12 px-8">
+  <ol class="relative border-l border-gray-200 dark:border-gray-700">
+    {
+      dates.map((date) => {
+        return (
+          <li class="mb-10 ml-4">
+            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white " />
+            <time class="mb-1 text-sm font-normal leading-none text-primary dark:text-white">
+              {date}
+            </time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {info[dates.indexOf(date)]}
+            </h3>
+            <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
+              {details[dates.indexOf(date)]}
+            </p>
+          </li>
+        )
+      })
+    }
+  </ol>
+</div>

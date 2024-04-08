@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+import HeaderSmall from "../../components/HeaderSmall.astro"
+
+import Gallery from "../../components/Gallery.astro"
+const title = "Audio_Tools"
+const subtitle = "Téléchargeur de vidéos YouTube"
+---
+
+<Layout title="Project 1">
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        Créé au tout début de ma découverte du développement informatique, ce
+        projet est un téléchargeur de vidéos YouTube. Il permet de télécharger
+        des vidéos YouTube en dans la meilleure qualité possible, audio ou
+        vidéo.
+        <br />
+        <br />
+         Il est également possible de télécharger des playlists entières.
+        <br />
+        <br />
+         Ce projet a été réalisé en Python avec la librairie yt-dlp.
+      </p>
+    </div>
+  </main>
+
+  <style></style>
+</Layout>

@@ -1,0 +1,42 @@
+---
+import Heading from "./Heading.astro"
+
+const heading = "Mon parcours"
+const dates = ["Août 2023", "Septembre 2022", "Été 2022", "2015"]
+const info = [
+  "Début de mon alternance chez K4-U",
+  "Début de mon parcours BUT Informatique",
+  "Baccalauréat EURO Maths Expertes / NSI",
+  "Première autoformation OpenClassrooms",
+]
+const details = [
+  "Le début de mon alternance chez K4-U marque le début de ma carrière professionnelle. J'ai choisi K4-U pour sa culture d'entreprise, son expertise, mais surtout pour son esprit d'équipe et sa bienveillance. Je suis très heureux de pouvoir travailler avec des professionnels de qualité et de pouvoir apprendre de nouvelles compétences. Je suis également très heureux de pouvoir travailler sur des projets concrets et de pouvoir mettre en pratique mes connaissances acquises à l'IUT - ou même apprendre de nouvelles technologies. Le monde de l'ERP est un monde nouveau pour moi, et je suis enchanté de pouvoir le découvrir avec K4-U.",
+  `Cette date marque le début de mon parcours en BUT Informatique parcours Réalisation d'Applications (parcours A) à l'IUT de Calais. J'ai choisi cette formation, car je voulais rester sur un équilibre entre théorie et pratique. Je souhaitais également m'insérer dans le monde professionnel avec l'alternance. À l'IUT, j'apprends de nombreuses technologies et je renforce mes compétences générales en informatique. Je travaille également sur des matières comme la gestion de projet, la communication, l'économie et le droit, qui m'apportent toutes des nouveaux points de vue sur l'univers du développement informatique.`,
+  "J'ai obtenu mon baccalauréat avec mention très bien. J'ai suivi une formation en mathématiques expertes et en numérique et sciences informatiques. J'ai également suivi une formation en anglais renforcé (mention EURO) sur la matière Sciences de l'Ingénieur.",
+  "Date de ma toute première autoformation. J'ai suivi un cours sur les bases de la programmation en Python sur OpenClassrooms. dans ce cours, j'ai pu voir les bases de la programmation et les bases de la syntaxe Python. Depuis, je baigne dans l'informatique sans jamais me lasser, car l'informatique est un monde en constante évolution dans lequel on apprend tous les jours.",
+]
+---
+
+<Heading heading={heading} />
+<div class="mb-12 px-8">
+  <ol class="relative border-l border-gray-200 dark:border-gray-700">
+    {
+      dates.map((date) => {
+        return (
+          <li class="mb-10 ml-4">
+            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5 border border-white " />
+            <time class="mb-1 text-sm font-normal leading-none text-primary dark:text-white">
+              {date}
+            </time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              {info[dates.indexOf(date)]}
+            </h3>
+            <p class="mb-4 text-base font-normal text-gray-700 dark:text-gray-400">
+              {details[dates.indexOf(date)]}
+            </p>
+          </li>
+        )
+      })
+    }
+  </ol>
+</div>

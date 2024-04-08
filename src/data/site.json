@@ -1,0 +1,69 @@
+{
+  "owner": "Colin Prokopowicz",
+  "siteName": "Portfolio de Colin Porkopowicz",
+  "siteDescription": "Mon Portfolio en ligne",
+  "about": "Je suis un étudiant en informatique. Je suis également alternant en entreprise chez K4-U.",
+  "contact": {
+    "email": "pbl@c1cloud.ovh",
+    "phone": "123456789",
+    "address": "123 rue Bonsoir, 62100 Calais"
+  },
+  "pages": [
+    {
+      "title": "Accueil",
+      "href": "/"
+    },
+    {
+      "title": "Projets",
+      "href": "/projects"
+    },
+    {
+      "title": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "social": [
+    {
+      "title": "GitHub",
+      "href": "https://github.com/Colnup"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/colin-prokopowicz/"
+    }
+  ],
+  "projects": [
+    {
+      "projectTitle": "Téléchargeur de vidéos YouTube",
+      "href": "project/one",
+      "about": "Un téléchargeur de vidéos YouTube simple pour télécharger des vidéos et des playlists, au format audio ou vidéo.",
+      "image": "/img/audio_tools.png",
+      "type": "Python, PyQT, yt-dlp, ffmpeg",
+      "repo": "https://github.com/Colnup/"
+    },
+    {
+      "projectTitle": "Jeu vidéo",
+      "href": "project/two",
+      "about": "Un jeu vidéo développé en Python avec la bibliothèque Pygame dans le cadre de mon parcours à l'IUT.",
+      "image": "/img/game.png",
+      "type": "Python, PyGame, Tiled",
+      "repo": "https://github.com/Colnup/"
+    },
+    {
+      "projectTitle": "Portfolio en ligne",
+      "href": "project/three",
+      "about": "Mon portfolio en ligne, hébergé avec WordPressCMS.",
+      "image": "/img/website.png",
+      "type": "Wordpress, CSS, JS",
+      "repo": "ttps://github.com/Colnup/"
+    },
+    {
+      "projectTitle": "IUTime",
+      "href": "project/four",
+      "about": "Bot Discord annonçant les emplois du temps de l'IUT de Calais.",
+      "image": "/img/iutime.png",
+      "type": "Python, Pycord, Requests",
+      "repo": "ttps://github.com/Colnup/"
+    }
+  ]
+}

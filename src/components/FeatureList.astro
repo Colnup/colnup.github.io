@@ -1,0 +1,48 @@
+---
+import Heading from "./Heading.astro"
+
+const heading = "Mes compétences"
+
+const sections = [
+  "Site Statique personnalisé",
+  "Automatisations",
+  "Bot Discord",
+  "Web Dynamique",
+  "Design Graphique",
+  "Collaboration",
+]
+const sectionsText = [
+  "Je suis capable de créer des sites web statiques personnalisés avec HTML, CSS, et JavaScript. J'ai également des compétences en SEO et en accessibilité.",
+  "Je peux automatiser des tâches répétitives avec des scripts en Python, Powershell ou JavaScript. J'ai aussi utilisé l'intégration continue GitHub Actions.",
+  "Je peux créer des bots Discord en Python avec la librairie pycord. J'ai déjà créé des bots de modération et d'emploi du temps.",
+  "Je suis capable de créer des sites web dynamiques avec de nombreuses technologies différentes. Pour en citer quelques unes: React, Vue, NodeJS, Django, Laravel et bien d'autres.",
+  "Je suis capable de créer des logos, des bannières, des illustrations et des maquettes de site web. J'utilise principalement le logiciel Figma.",
+  "J'administre un serveur GitLab hébergé en entreprise. Je suis familier avec les outils de collaboration comme Git, GitHub, GitLab, Discord, Trello, etc.",
+]
+---
+
+<div class="mb-12 bg-stone-100 dark:bg-slate-800">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <Heading heading={heading} />
+    <div
+      class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+    >
+      {
+        sections.map((section) => {
+          return (
+            <div class="flex flex-col">
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white">
+                  {sections[sections.indexOf(section)]}
+                </h3>
+                <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">
+                  {sectionsText[sections.indexOf(section)]}
+                </p>
+              </div>
+            </div>
+          )
+        })
+      }
+    </div>
+  </div>
+</div>

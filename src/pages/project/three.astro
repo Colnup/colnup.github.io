@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets"
+
+import Layout from "../../layouts/Layout.astro"
+import HeaderSmall from "../../components/HeaderSmall.astro"
+
+import photo from "../../assets/accueil.png"
+
+const title = "Portfolio"
+const subtitle = "Mon portfolio WordPress"
+---
+
+<Layout title={title}>
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <Image
+        class="rounded-lg"
+        src={photo}
+        alt="Portfolio WordPress"
+        width="800"
+        height="450"
+      />
+    </div>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        Ce site est un projet réalisé au cours de l'année. Il me permet de
+        montrer mes acquis au fur et à mesure de l'année.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style></style>
