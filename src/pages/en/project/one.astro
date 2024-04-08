@@ -1,0 +1,31 @@
+---
+import Layout from "../../../layouts/en/Layout.astro"
+
+import HeaderSmall from "../../../components/HeaderSmall.astro"
+
+const title = "Audio_Tools"
+const subtitle = "YouTube video Downloader"
+---
+
+<Layout title="Project 1">
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        Created at the very beginning of my journey into software development,
+        this project is a YouTube video downloader. It allows downloading
+        YouTube videos in the best possible quality, either audio or video.
+        <br />
+        <br />
+         It is also possible to download entire playlists.
+        <br />
+        <br />
+         This project was implemented in Python using the yt-dlp library.
+      </p>
+    </div>
+  </main>
+
+  <style></style>
+</Layout>

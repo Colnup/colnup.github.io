@@ -1,0 +1,27 @@
+---
+import Layout from "../../../layouts/en/Layout.astro"
+
+import HeaderSmall from "../../../components/HeaderSmall.astro"
+
+const title = "Video Game"
+const subtitle = "Interactive student project"
+---
+
+<Layout title="Project 2">
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        This project was carried out as part of my Bachelor's degree in Computer
+        Science. It is an interactive video game developed as a team effort. I
+        had the opportunity to work on the graphical aspects of the game,
+        creating illustrations and animations, as well as on the application
+        logic by developing Python classes and abstractions.
+      </p>
+    </div>
+  </main>
+
+  <style></style>
+</Layout>

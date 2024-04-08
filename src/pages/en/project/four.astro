@@ -1,0 +1,25 @@
+---
+import Layout from "../../../layouts/en/Layout.astro"
+
+import HeaderSmall from "../../../components/HeaderSmall.astro"
+
+const title = "IUTime"
+const subtitle = "Discord bot for IUT Calais students"
+---
+
+<Layout title={title}>
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+  <main>
+    <div class="mb-12">
+      <p class="dark:text-white">
+        Project co-developed with colleagues from the IUT. This Discord bot for
+        class schedules allows retrieval of the schedules from the IUT de Calais
+        and displaying them via private messages on Discord. It also enables
+        storing assignments and receiving notifications as the deadline
+        approaches.
+      </p>
+    </div>
+  </main>
+</Layout>
