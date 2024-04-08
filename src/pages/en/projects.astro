@@ -5,7 +5,7 @@ const subtitle = "Recent projects I've been working on."
 import Layout from "../../layouts/en/Layout.astro"
 
 import HeaderSmall from "../../components/HeaderSmall.astro"
-import ProjectCard from "../../components/ProjectCards.astro"
+import ProjectCard from "../../components/en/ProjectCards.astro"
 import data from "../../data/site_en.json"
 
 type Props = {
@@ -15,7 +15,7 @@ type Props = {
   image: string
   type?: string
   repo?: string
-};
+}
 ---
 
 <Layout title="Projects">

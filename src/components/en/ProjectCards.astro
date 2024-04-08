@@ -1,6 +1,5 @@
 ---
-import { getImage } from "astro:assets"
-import ButtonGroup from "./ButtonGroup.astro"
+import ButtonGroup from "../ButtonGroup.astro"
 interface Props {
   projectTitle: string
   body: string
@@ -41,6 +40,6 @@ const { href, projectTitle, body, type, repo, image } = Astro.props
     <p class="text-lg font-normal text-gray-700 dark:text-gray-400 mb-4">
       {body}
     </p>
-    <ButtonGroup text1="Plus d'infos" href1={href} text2="Dépôt" href2={repo} />
+    <ButtonGroup text1="More info" href1={href} text2="Repo" href2={repo} />
   </div>
 </div>
