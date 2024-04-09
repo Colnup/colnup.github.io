@@ -35,7 +35,7 @@
   "projects": [
     {
       "projectTitle": "YouTube Video Downloader",
-      "href": "project/one",
+      "href": "/project/one",
       "about": "A simple YouTube video downloader to download videos and playlists, in audio or video format.",
       "image": "/img/audio_tools.png",
       "type": "Python, PyQT, yt-dlp, ffmpeg",
@@ -43,7 +43,7 @@
     },
     {
       "projectTitle": "Video Game",
-      "href": "project/two",
+      "href": "/project/two",
       "about": "A video game developed in Python with the Pygame library as part of my course at the IUT.",
       "image": "/img/game.png",
       "type": "Python, PyGame, Tiled",
@@ -51,7 +51,7 @@
     },
     {
       "projectTitle": "Online Portfolio",
-      "href": "project/three",
+      "href": "/project/three",
       "about": "My online portfolio, hosted with WordPressCMS.",
       "image": "/img/website.png",
       "type": "Wordpress, CSS, JS",
@@ -59,7 +59,7 @@
     },
     {
       "projectTitle": "IUTime",
-      "href": "project/four",
+      "href": "/project/four",
       "about": "Discord bot announcing the schedules of the IUT de Calais.",
       "image": "/img/iutime.png",
       "type": "Python, Pycord, Requests",

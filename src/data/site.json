@@ -35,7 +35,7 @@
   "projects": [
     {
       "projectTitle": "Téléchargeur de vidéos YouTube",
-      "href": "project/one",
+      "href": "/project/one",
       "about": "Un téléchargeur de vidéos YouTube simple pour télécharger des vidéos et des playlists, au format audio ou vidéo.",
       "image": "/img/audio_tools.png",
       "type": "Python, PyQT, yt-dlp, ffmpeg",
@@ -43,7 +43,7 @@
     },
     {
       "projectTitle": "Jeu vidéo",
-      "href": "project/two",
+      "href": "/project/two",
       "about": "Un jeu vidéo développé en Python avec la bibliothèque Pygame dans le cadre de mon parcours à l'IUT.",
       "image": "/img/game.png",
       "type": "Python, PyGame, Tiled",
@@ -51,19 +51,19 @@
     },
     {
       "projectTitle": "Portfolio en ligne",
-      "href": "project/three",
+      "href": "/project/three",
       "about": "Mon portfolio en ligne, hébergé avec WordPressCMS.",
       "image": "/img/website.png",
       "type": "Wordpress, CSS, JS",
-      "repo": "ttps://github.com/Colnup/"
+      "repo": "https://github.com/Colnup/"
     },
     {
       "projectTitle": "IUTime",
-      "href": "project/four",
+      "href": "/project/four",
       "about": "Bot Discord annonçant les emplois du temps de l'IUT de Calais.",
       "image": "/img/iutime.png",
       "type": "Python, Pycord, Requests",
-      "repo": "ttps://github.com/Colnup/"
+      "repo": "https://github.com/Colnup/"
     }
   ]
 }
