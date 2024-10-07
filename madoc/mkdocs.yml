@@ -1,0 +1,7 @@
+site_name: MaDoc
+nav:
+  - Home: index.md
+  - License: LICENSE.md
+  - Contributing: CONTRIBUTING.md
+  - Code of conduct: CODE_OF_CONDUCT.md
+theme: readthedocs
